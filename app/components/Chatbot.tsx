@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
+import { useChat } from "./ChatContext"
 
 const STARTER_PROMPTS = [
   "Substitute butter in a recipe",
@@ -26,7 +27,7 @@ function createConversation(): Conversation {
 }
 
 export default function Chatbot() {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen, pendingMessage, setPendingMessage } = useChat();
   const [conversations, setConversations] = useState<Conversation[]>(() => [createConversation()]);
   const [activeId, setActiveId] = useState<string>(() => conversations[0].id);
   const [input, setInput] = useState("");
@@ -61,6 +62,13 @@ export default function Chatbot() {
   useEffect(() => {
     if (open) bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading, open]);
+
+  useEffect(() => {
+    if(pendingMessage && open) {
+      sendMessage(pendingMessage);
+      setPendingMessage(null);
+    }
+  }, [pendingMessage, open]);
 
   function updateMessages(id: string, msgs: Message[]) {
     setConversations((prev) =>
