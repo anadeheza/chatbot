@@ -157,7 +157,6 @@ export default function Chatbot() {
 
   return (
     <>
-      {/* Floating toggle button */}
       <button
         onClick={() => setOpen((v) => !v)}
         className="chat-fab"
@@ -170,7 +169,7 @@ export default function Chatbot() {
         ) : (
           <span style={{ fontSize: "22px" }}>👨‍🍳</span>
         )}
-        {!open && <span className="fab-label">Ask Chef Basil</span>}
+        {!open && <span className="fab-label">Ask Chefsito</span>}
       </button>
 
       {/* Chat panel */}
@@ -205,8 +204,8 @@ export default function Chatbot() {
         <div className="chat-messages chat-scroll">
           {messages.length === 0 && (
             <div className="chat-empty">
-              <p className="chat-empty-title">Hi! I&apos;m Chef Basil 🌿</p>
-              <p className="chat-empty-sub">Ask me anything about cooking — recipes, substitutions, techniques, you name it.</p>
+              <p className="chat-empty-title">Hi! I&apos;m Chefsito 🌿</p>
+              <p className="chat-empty-sub">Ask me anything about cooking — recipes, substitutions, techniques, you name it, i do it.</p>
               <div className="starter-grid">
                 {STARTER_PROMPTS.map((p) => (
                   <button key={p} onClick={() => sendMessage(p)} className="starter-btn">{p}</button>
@@ -253,7 +252,7 @@ export default function Chatbot() {
             <textarea
               className="chat-textarea"
               rows={1}
-              placeholder="Ask Chef Basil..."
+              placeholder="Ask Chefsito..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
