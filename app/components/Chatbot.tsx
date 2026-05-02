@@ -179,7 +179,7 @@ export default function Chatbot() {
           <div className="chat-header-info">
             <span className="chat-avatar">👨‍🍳</span>
             <div>
-              <div className="chat-header-name">Chef Basil</div>
+              <div className="chat-header-name">Chefsito</div>
               <div className="chat-header-status">
                 <span className="status-dot" />
                 AI Cooking Assistant
