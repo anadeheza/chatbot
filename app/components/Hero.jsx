@@ -24,7 +24,7 @@ export default function Hero() {
         
         <h1 className="hero-title">
           <span className="hero-title-line">Easy</span>
-          <span className="hero-title-line accent">Recipes</span>
+          <span className="hero-title-line accent">Recipes,</span>
           <span className="hero-title-line">Happier life</span>
         </h1>
         
