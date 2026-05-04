@@ -1,8 +1,3 @@
-##Chefsito! 𓌉◯𓇋
-In this website you an look for a recipe or ask the AI chatbot to help you with your cooking.
+##Recipe finder
 
-This project was made using Node.js and Tailwind, integrating the Groq AI API.
-
-The instructions are the simplest, just either open the chatbot for any tips, suggestions or recipes or choose a recipe that will take you directly to Chefsito's chat and he'll give you the full recipe.
-
-You can also add the list of ingredients you have on your fridge and Chefsito will create a recipe with only that.
+ok so basically this is a recipe website i made because i wanted to learn next.js}. you can browse some recipes i picked and made by myself, click on them and it shows you the full step by step instructions. theres also kind of a fridge thing where you type the ingredients you have at home and it finds the best recipe that matches — like if you type "eggs tomato garlic" it'll probably show you shakshuka (which is actually really good btw). the whole site is built with next.js and tailwind and it used to have an AI chatbot powered by groq but i removed it because it was not allowed in hack club.
