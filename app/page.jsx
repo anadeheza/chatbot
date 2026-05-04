@@ -5,10 +5,9 @@ import Recipes from "./components/Recipes";
 
 export default function Page() {
   return (
-    <ChatProvider>
-        <Hero />
-        <Recipes />
-        <Chatbot />
-    </ChatProvider>
+    <>
+      <Hero />
+      <Recipes />
+    </>
   );
 }

@@ -29,7 +29,7 @@ export default function Hero() {
         </h1>
         
         <p className="hero-subtitle">
-          Explore some cool recipe ideas for all levels! - with an AI chef to ask for suggestions, solutions and tips, you can cook with what you already have in your kitchen.
+          Explore some cool recipe ideas for all levels! 
         </p>
 
         <div className="hero-actions">
